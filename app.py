@@ -64,7 +64,8 @@ def combined_sentiment(text: str) -> float:
 # Train Model (cached per run)
 # -----------------------------
 @st.cache_resource
-def train_model(X, y):
+def train_model(_X, _y):
+    X, y = _X, _y
     model = nn.Linear(X.shape[1],1)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
     loss_fn = nn.MSELoss()
