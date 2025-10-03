@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+alpha_vantage
+gnews
+textblob
+transformers
+torch
